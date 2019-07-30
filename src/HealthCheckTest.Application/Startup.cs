@@ -21,8 +21,7 @@ namespace HealthCheckTest.Application
                 app.UseDeveloperExceptionPage();
             }
 
-            app.MapWhen(context => context.Request.Host.Port == 5001, b => b.UseHealthChecks("/ready", 5001));
-            //app.UseHealthChecks("/ready", 5001);
+            app.UseHealthChecks("/ready");
 
             logger.LogInformation("Before sleep");
             Thread.Sleep(5000);

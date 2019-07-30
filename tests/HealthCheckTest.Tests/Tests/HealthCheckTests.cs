@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace HealthCheckTest.Tests
+namespace HealthCheckTest.Tests.Tests
 {
     [Collection(Constants.IntegrationTests)]
     public class HealthCheckTests
